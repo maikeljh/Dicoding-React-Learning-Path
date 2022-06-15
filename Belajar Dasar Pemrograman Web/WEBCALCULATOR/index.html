@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Web Calculator</title>
+            <link rel="stylesheet" href="assets/style.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+        <body>
+            <!-- Kalkulator -->
+            <div class="calculator flex-column">
+                <div class="display">
+                    <h1 id="displayNumber">0</h1>
+                </div>
+                <div class="flex-row">
+                    <div class="box">7</div>
+                    <div class="box">8</div>
+                    <div class="box">9</div>
+                    <div class="operator negative">+/-</div>
+                </div>
+                <div class="flex-row">
+                    <div class="box">4</div>
+                    <div class="box">5</div>
+                    <div class="box">6</div>
+                    <div class="operator">-</div>
+                </div>
+                <div class="flex-row">
+                    <div class="box">1</div>
+                    <div class="box">2</div>
+                    <div class="box">3</div>
+                    <div class="operator">+</div>
+                </div>
+                <div class="flex-row">
+                    <div class="clear">CE</div>
+                    <div class="box">0</div>
+                    <div class="double-box equals">=</div>   
+                </div>
+            </div>
+
+            <!-- Hasil Perhitungan -->
+            <div class="history calculator">
+                <h2>Riwayat Perhitungan</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Angka Pertama</th>
+                            <th>Operator</th>
+                            <th>Angka Kedua</th>
+                            <th>Hasil</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyList"></tbody>
+                </table>
+            </div>
+            <script src="assets/storage.js"></script>p
+            <script src="assets/kalkulator.js"></script>
+        </body>
+    </html>
